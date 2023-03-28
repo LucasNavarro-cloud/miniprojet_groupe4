@@ -1,0 +1,50 @@
+Membre du groupe :
+
+Butillon Clément, Sami Saidi, Lucas Navaro, Matheo Barthelemy, Teyssir Hassen Bouzouita
+
+ 
+
+Pour mettre en place ce projet nous nous sommes organisés de la manière suivante :
+
+Dans un premier temps nous avons Crée un compte Docker partager et en parallèle nous avons également crée un compte GitHub.
+
+Nous avons mis en place une VM Ubuntu et installer docker sur cette dernière.
+
+Nous avons repris le fichier mis à disposition dans le dépôt Git et nous avons ajouté et édité le fichier docker sur notre VM.
+
+Pour cette installation nous avons installer Maven pour nous permettre de build l’image.
+
+Pour nous permettre d’utiliser pleinement le Dockerfile nous l’avons ajouté à la racine du projet tout en respectant les consignes données qui était
+
+Faire en sorte que le fichier utilise le plus possible le cache
+Optimisation de la taille de l’image finale
+
+ 
+
+Une fois l’image construite nous la publions sur le dépôt public Dockerhub
+
+Dans un premier temps on crée un répertoire sur docker pour accueillir l’image
+
+On fait un docker tag et un docker push pour envoyer l’image que l’on a créé sur notre nouveau répertoire Dockerhub
+
+Et pour pousser la chose plus loin on fait un docker run pour lancer l’image.
+
+ 
+
+Et pour finir nous avons installer minikub pour nous permettre de déployer notre application sur un cluster kubernetes
+
+Pour ensuite faire appel à Docker compose
+
+ 
+
+Lors de ce projet nous avons rencontrés certaines difficultés comme :
+
+La construction de l’image dockerfile avec la mise en place du fichier source et destination
+
+Notre difficulté principale à été de retranscrire le dossier partager sur le git et la création de notre fichier pour permettre de build de notre propre image.
+
+ 
+
+Nous avons également rencontré une autre difficulté sur la partie accès en localhost de Jetty car dans notre fichier source docker nous avions fait une erreur sur les chemins de fichiers.
+
+Cependant nous avons rencontré un ultime problème ce qui nous a empêché de mener à bien ce projet car Minikube ne se lançais pas et plante à chaque démarrage nous n’avons donc pas pu continuer à déployer la solution et Docker compose.

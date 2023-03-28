@@ -48,3 +48,8 @@ Notre difficulté principale à été de retranscrire le dossier partager sur le
 Nous avons également rencontré une autre difficulté sur la partie accès en localhost de Jetty car dans notre fichier source docker nous avions fait une erreur sur les chemins de fichiers.
 
 Cependant nous avons rencontré un ultime problème ce qui nous a empêché de mener à bien ce projet car Minikube ne se lançais pas et plante à chaque démarrage nous n’avons donc pas pu continuer à déployer la solution et Docker compose.
+
+
+minikube kubectl -- create deployment deploygrpprojet --image=test:latest
+minikube kubectl -- run deployment.apps/deploygrpprojet --image=test:latest
+minikube kubectl -- expose deployment.apps/deploygrpprojet --port 8080
